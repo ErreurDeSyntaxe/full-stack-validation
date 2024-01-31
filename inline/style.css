@@ -1,0 +1,167 @@
+/* Template CSS File */
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./font/Roboto-Regular.ttf');
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  color: red;
+}
+
+html {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #eee;
+  background-color: #333;
+}
+body {
+  background-color: #333;
+  min-height: 100vh;
+}
+header {
+  padding: 1rem 2rem;
+}
+h1 {
+  color: orange;
+}
+h2 {
+  color: orangered;
+}
+form {
+  max-width: 600px;
+}
+form > p {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+  /* for the underlay */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  /* for the label to inherit */
+  color: #eee;
+}
+form p::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: hsla(200, 10%, 50%, 0.64);
+  transform: translateX(-110%);
+  transition: transform 0.2s ease-out;
+}
+form p:focus-within {
+  /* for the label to inherit */
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+form p:focus-within::before {
+  transform: translateX(0);
+}
+label {
+  font-size: 1.2rem;
+  flex-basis: 30%;
+  padding: 0.25rem 1px;
+  text-align: start;
+  /* in cooperation with form p:focus-within */
+  color: inherit;
+  text-shadow: inherit;
+}
+input {
+  font-size: 1.2rem;
+  flex-basis: 100%;
+  width: calc(100% - 2px);
+  padding: 0.25rem 1rem;
+  border-radius: 0.25rem;
+}
+select,
+option {
+  font-size: 1.2rem;
+  flex-basis: 100%;
+  width: calc(100% - 2px);
+  padding: 0.25rem 1rem;
+}
+button {
+  border: none;
+  background-color: cornflowerblue;
+  color: #fff;
+  flex-basis: 100%;
+  width: calc(100% - 2px);
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+}
+.instructions {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: #ccc;
+}
+.instructions span {
+  padding-left: 2rem;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  /* field currently has focus */
+  background-color: gold;
+}
+input:read-only {
+  /* field marked as read-only */
+}
+input:read-write {
+  /* not disabled or read-only */
+}
+input:disabled {
+  /* disabled attribute in html element */
+}
+input:required,
+select:required,
+option:required {
+  /* input field IS marked as required */
+  border-color: red;
+}
+input:optional {
+  /* input field not marked as required */
+}
+:placeholder-shown {
+  /* placeholder is showing... not user text */
+  background-color: lightpink;
+}
+::placeholder {
+  /* style the placeholder text */
+  letter-spacing: 1rem;
+}
+input:valid {
+  /* passed all validation based on validityState properties */
+  background-color: cornflowerblue;
+}
+input:invalid {
+  /* failed some validation */
+  border-left: 4px solid hsl(0, 50%, 50%);
+  background-color: hsl(0, 50%, 70%);
+}
+:in-range {
+  /* value is the right length and not too long or short */
+}
+:out-of-range {
+  /* value too short, too long, too small or too big */
+  border-right: 2rem solid black;
+}
