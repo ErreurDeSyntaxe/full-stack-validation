@@ -21,16 +21,85 @@
       action="#"
       method="post"
     >
-      <label for="fullname">Full Name</label>
-      <input
-        type="text"
-        id="fullname"
-        enterkeyhint="next"
-        autocomplete="name"
-        inputmode="text"
-        placeholder="John Smith"
-        required
-      />
+      <p>
+        <label for="fullname">Full Name</label>
+        <input
+          type="text"
+          id="fullname"
+          enterkeyhint="next"
+          autocomplete="name"
+          inputmode="text"
+          placeholder="Réjean Tremblay"
+          pattern="[A-Z][a-z]+"
+          required
+        />
+      </p>
+      <p>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          enterkeyhint="next"
+          inputmode="email"
+          autocomplete="email"
+          placeholder="me@example.ca"
+          required
+        />
+      </p>
+      <p>
+        <label for="usercountry">Country</label>
+        <input
+          type="text"
+          id="usercountry"
+          name="country"
+          enterkeyhint="next"
+          inputmode="text"
+          autocomplete="country-name"
+          placeholder="Canada..."
+          required
+        />
+      </p>
+      <p>
+        <label for="postalCode">Postal Code (Zip Code)</label>
+        <input
+          type="text"
+          id="postalCode"
+          name="postal"
+          enterkeyhint="next"
+          inputmode="text"
+          autocomplete="postal-code"
+          placeholder="12345-1234"
+          required
+        />
+      </p>
+      <p>
+        <label for="newpass">Set Up Password</label>
+        <input
+          type="password"
+          id="newpass"
+          name="newpass"
+          enterkeyhint="next"
+          inputmode="text"
+          autocomplete="new-password"
+          placeholder="********"
+          required
+        />
+      </p>
+      <p>
+        <label for="confirmpass">Confirm Password</label>
+        <input
+          type="password"
+          id="confirmpass"
+          name="confirmpass"
+          enterkeyhint="done"
+          inputmode="text"
+          autocomplete="new-password"
+          placeholder="********"
+          required
+        />
+      </p>
+      <p><button type="submit">Submit</button></p>
     </form>
   </body>
 </html>
