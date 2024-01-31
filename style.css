@@ -1,0 +1,23 @@
+/* Template CSS File */
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./font/Roboto-Regular.ttf');
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  padding: 0.6rem;
+}
+
+h1 {
+  color: red;
+}
