@@ -1,6 +1,6 @@
-# Webpack Template
+# Form Validation
 
-A template for practice or simple projects
+A practice project to understand JS form validation
 
 ## About the Project
 
@@ -12,7 +12,7 @@ A template for practice or simple projects
 
 ### Live
 
-<a href='http://google.com/'>Google</a>
+<a href='https://erreurdesyntaxe.github.io/full-stack-validation/'>Form Validation</a>
 
 ### Objective
 
@@ -20,7 +20,7 @@ The goal of the project is to learn xyz by building abc.
 
 ###### Project Statement
 
-<a href='http://theodinproject.com/'>The Odin Project</a> (Month Year)
+<a href='https://www.theodinproject.com/lessons/node-path-javascript-form-validation-with-javascript'>Form Validation</a> (Jan '24)
 
 ### Features
 
@@ -38,13 +38,13 @@ The goal of the project is to learn xyz by building abc.
 
 ## To-Do
 
-- [x] Understand the objectives
-- [ ] Plan
-  - [ ] Logic
-  - [ ] UI
-- [ ] Fix bugs
-  - [ ] Wrong date
-  - [ ] Layout on resize
+- [x] Read the documentation
+  - [ ] Google questions
+  - [ ] Recall important points
+- [ ] Practice
+  - [ ] From memory
+  - [ ] With documentation
+  - [ ] Check best practices
 
 ## Lessons & Difficulties
 
