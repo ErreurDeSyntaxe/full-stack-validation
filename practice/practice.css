@@ -19,3 +19,15 @@ p {
 p:focus-within {
   background-color: gray;
 }
+
+[type='text']:invalid,
+[type='email']:invalid,
+[type='password']:invalid {
+  background-color: lightcoral;
+}
+
+[type='text']:valid,
+[type='email']:valid,
+[type='password']:valid {
+  background-color: lightgreen;
+}
